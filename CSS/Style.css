@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Dolce';
+    src: url('../Fonts/DolceVitaLight.eot');
+    src: url('../Fonts/DolceVitaLight.eot') format('embedded-opentype'),
+         url('../Fonts/DolceVitaLight.woff2') format('woff2'),
+         url('../Fonts/DolceVitaLight.woff') format('woff'),
+         url('../Fonts/DolceVitaLight.ttf') format('truetype'),
+         url('../Fonts/DolceVitaLight.svg#DolceVitaLight') format('svg');
+         }
+    @font-face {     
+    font-family: 'Josephin';
+    src: url('../Fonts/Josephin.eot');
+    src: url('../Fonts/Josephin.eot') format('embedded-opentype'),
+         url('../Fonts/Josephin.woff2') format('woff2'),
+         url('../Fonts/Josephin.woff') format('woff'),
+         url('../Fonts/Josephin.ttf') format('truetype'),
+         url('../Fonts/Josephin.svg#Josephin') format('svg');
+         }
+   @font-face {
+    font-family: 'JennaSue';
+    src: url('../Fonts/JennaSue.eot');
+    src: url('../Fonts/JennaSue.eot') format('embedded-opentype'),
+         url('../Fonts/JennaSue.woff2') format('woff2'),
+         url('../Fonts/JennaSue.woff') format('woff'),
+         url('../Fonts/JennaSue.ttf') format('truetype'),
+         url('../Fonts/JennaSue.svg#JennaSue') format('svg');
+}
+
+body {  
+  margin:0;
+  background: url(../Images/bckgnd.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+#background {
+  
+
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom:20%;
+} 
+
+#instahover:hover {color: #bc2a8d;}
+
+#twithover:hover {color: #0084b4;}
+
+#emailhover:hover {color: green;}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the logo */
+ul.topnav li.logo {
+  float: left;
+  font-family: 'Josephin';  
+  padding: 8px 5px;
+  }
+
+  /* Style the p tag in the logo */  
+ul.topnav li.logo p {
+  font-family: 'JennaSue';
+  display: inline;
+  text-transform: none;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a, i {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Hide the hamburger menu icon from showing in the list */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one. 
+Show the hamburger menu (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    display: inline-block;
+    padding: 8px 5px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#title {
+  font-family: 'Josephin';
+  font-size: 20vw;
+  margin-bottom: 20px;
+}
+
+#subtitle {
+  font-family: 'Dolce';
+  font-size: 5vw;
+  margin-top: 0px;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s
+}
+
+.centered {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin:auto;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation:portrait) {
+  ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom:60%;
+} 
+}
+
+/*@media only screen and (min-width : 320px) and (max-width : 480px) {
+  body {
+    background: url(../Images/flvrmobile2.png) no-repeat center center fixed;
+  }
+}*/
+
+#abc {
+width:100%;
+height:100%;
+
+top:0;
+left:0;
+display:none;
+position:fixed;
+
+overflow:auto
+}
+
+i#close {
+position:absolute;
+right:-25px;
+top:-25px;
+color: black;
+cursor:pointer
+}
+div#popupContact {
+position:fixed;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif;
+display: none;
+}
+form {
+max-width:300px;
+min-width:250px;
+padding:10px 50px;
+border:2px solid steelblue;
+border-radius:10px;
+font-family:'Dolce';
+background-color:#fff;
+}
+p {
+margin-top:30px
+}
+h2 {
+background-color:steelblue;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0;
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:'Dolce'
+}
+#name {
+background-image:url(../Images/name.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-image:url(../Images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-image:url(../Images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:'Dolce';
+margin-bottom:30px
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:forestgreen;
+color:#fff;
+border:1px solid forestgreen;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#cd853f;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+}
